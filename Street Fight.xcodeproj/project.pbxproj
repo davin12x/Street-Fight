@@ -14,6 +14,9 @@
 		0A44DD781C418B8000B36518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A44DD761C418B8000B36518 /* LaunchScreen.storyboard */; };
 		0A44DD801C418E3100B36518 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A44DD7F1C418E3100B36518 /* Character.swift */; };
 		0A44DD821C41914400B36518 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A44DD811C41914400B36518 /* Player.swift */; };
+		0A44DD841C4196B500B36518 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A44DD831C4196B500B36518 /* Enemy.swift */; };
+		0A44DD861C4199BE00B36518 /* Loki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A44DD851C4199BE00B36518 /* Loki.swift */; };
+		0A44DD881C419CE800B36518 /* DevilWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A44DD871C419CE800B36518 /* DevilWizard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		0A44DD791C418B8000B36518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A44DD7F1C418E3100B36518 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		0A44DD811C41914400B36518 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		0A44DD831C4196B500B36518 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		0A44DD851C4199BE00B36518 /* Loki.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loki.swift; sourceTree = "<group>"; };
+		0A44DD871C419CE800B36518 /* DevilWizard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevilWizard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				0A44DD791C418B8000B36518 /* Info.plist */,
 				0A44DD7F1C418E3100B36518 /* Character.swift */,
 				0A44DD811C41914400B36518 /* Player.swift */,
+				0A44DD831C4196B500B36518 /* Enemy.swift */,
+				0A44DD851C4199BE00B36518 /* Loki.swift */,
+				0A44DD871C419CE800B36518 /* DevilWizard.swift */,
 			);
 			path = "Street Fight";
 			sourceTree = "<group>";
@@ -143,8 +152,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A44DD821C41914400B36518 /* Player.swift in Sources */,
+				0A44DD841C4196B500B36518 /* Enemy.swift in Sources */,
+				0A44DD881C419CE800B36518 /* DevilWizard.swift in Sources */,
 				0A44DD801C418E3100B36518 /* Character.swift in Sources */,
 				0A44DD701C418B8000B36518 /* ViewController.swift in Sources */,
+				0A44DD861C4199BE00B36518 /* Loki.swift in Sources */,
 				0A44DD6E1C418B8000B36518 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
