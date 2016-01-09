@@ -12,6 +12,8 @@
 		0A44DD731C418B8000B36518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A44DD711C418B8000B36518 /* Main.storyboard */; };
 		0A44DD751C418B8000B36518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A44DD741C418B8000B36518 /* Assets.xcassets */; };
 		0A44DD781C418B8000B36518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A44DD761C418B8000B36518 /* LaunchScreen.storyboard */; };
+		0A44DD801C418E3100B36518 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A44DD7F1C418E3100B36518 /* Character.swift */; };
+		0A44DD821C41914400B36518 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A44DD811C41914400B36518 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0A44DD741C418B8000B36518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A44DD771C418B8000B36518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A44DD791C418B8000B36518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A44DD7F1C418E3100B36518 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		0A44DD811C41914400B36518 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				0A44DD741C418B8000B36518 /* Assets.xcassets */,
 				0A44DD761C418B8000B36518 /* LaunchScreen.storyboard */,
 				0A44DD791C418B8000B36518 /* Info.plist */,
+				0A44DD7F1C418E3100B36518 /* Character.swift */,
+				0A44DD811C41914400B36518 /* Player.swift */,
 			);
 			path = "Street Fight";
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A44DD821C41914400B36518 /* Player.swift in Sources */,
+				0A44DD801C418E3100B36518 /* Character.swift in Sources */,
 				0A44DD701C418B8000B36518 /* ViewController.swift in Sources */,
 				0A44DD6E1C418B8000B36518 /* AppDelegate.swift in Sources */,
 			);
