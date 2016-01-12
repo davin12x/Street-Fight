@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Player: Character{
+class Player: Character {
     private var _name = "Player"
     
     var name : String{
@@ -21,8 +21,17 @@ class Player: Character{
     var inventory : [String]{
         return _inventory
     }
-    convenience init(name : String, healthPoint : Int, attackPower : Int){
-        self.init(startingHealthPoint:healthPoint,startingAttackPower: attackPower)
+    
+    func addItemToInventory(item : String ){
+        _inventory.append(item)
+    
+    }
+    
+    
+    convenience init(name : String, hp : Int, attackPower : Int) {
+        
+        self.init(startingHealthPoint: hp, AttackPower : 15)
+       
         _name = name
     }
     

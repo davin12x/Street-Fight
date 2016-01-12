@@ -10,12 +10,12 @@ import Foundation
 
 class Character{
 
-    var _healthPoint :Int = 100
-    var _attackPower: Int = 10
+   private var _hp :Int = 100
+    private var _attackPower: Int = 10
     
     var healthPoint:Int{
         get{
-            return _healthPoint
+            return _hp
         }
         
     }
@@ -34,13 +34,15 @@ class Character{
             }
         }
     }
-    init(startingHealthPoint:Int,startingAttackPower: Int)
+    init(startingHealthPoint:Int,AttackPower: Int)
     {
-        self._healthPoint = startingHealthPoint
-        self._attackPower = startingAttackPower
+        self._hp = startingHealthPoint
+        self._attackPower = AttackPower
     }
-    func attemptAttack(attackPower:Int)->Bool{
-        self._healthPoint -= attackPower
+    
+    func attemptAttack(attackPower: Int)->Bool{
+        self._hp -= attackPower
+        
         return true
     }
     

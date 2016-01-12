@@ -5,6 +5,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -48,7 +55,7 @@
                                     <constraint firstAttribute="height" constant="91" id="NMi-ei-1O6"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player Attacked Wild Kimara" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRH-UN-PUK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Press The Attack Button To Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRH-UN-PUK">
                                 <rect key="frame" x="84" y="71" width="430" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="430" id="k3U-Od-J0t"/>
@@ -64,7 +71,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDT-0C-mnu">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDT-0C-mnu">
                                 <rect key="frame" x="424" y="408" width="104" height="116"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="116" id="D2g-uW-T2z"/>
@@ -85,6 +92,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdy-wR-IxD">
+                                <rect key="frame" x="424" y="525" width="70" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="7OK-Ml-5Vf"/>
+                                    <constraint firstAttribute="width" constant="70" id="jRy-Tm-8pq"/>
+                                </constraints>
+                                <state key="normal" image="attack"/>
+                                <connections>
+                                    <action selector="onAttackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l9C-aY-WO8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -93,7 +111,9 @@
                             <constraint firstItem="Czc-zK-aaX" firstAttribute="top" secondItem="x53-Ry-mWr" secondAttribute="bottom" constant="3" id="BQQ-TV-AkD"/>
                             <constraint firstItem="Czc-zK-aaX" firstAttribute="top" secondItem="FA7-y2-SkS" secondAttribute="bottom" constant="110" id="C45-xF-gWr"/>
                             <constraint firstAttribute="trailing" secondItem="Wb6-1W-CWi" secondAttribute="trailing" id="DF6-Ja-cZc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qdy-wR-IxD" secondAttribute="trailing" constant="86" id="DzO-ZF-vXx"/>
                             <constraint firstItem="A6h-kf-ieL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ea2-VV-y1h"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Qdy-wR-IxD" secondAttribute="bottom" constant="-4" id="KqM-yr-FFT"/>
                             <constraint firstItem="Wb6-1W-CWi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="M1D-03-fjn"/>
                             <constraint firstItem="A6h-kf-ieL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="1" id="Nm5-X8-s8o"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fDT-0C-mnu" secondAttribute="trailing" constant="52" id="QdG-b9-4Op"/>
@@ -113,10 +133,10 @@
                     </view>
                     <connections>
                         <outlet property="chestBtn" destination="fDT-0C-mnu" id="fQ5-ON-4d5"/>
-                        <outlet property="enemyHpLabel" destination="Gn4-X2-BkN" id="1Mw-xT-S2q"/>
-                        <outlet property="enemyImage" destination="xyt-KK-NlC" id="QVg-CZ-Kcc"/>
-                        <outlet property="playerHpLabel" destination="FA7-y2-SkS" id="sO9-Sa-eMj"/>
-                        <outlet property="printLabel" destination="FA7-y2-SkS" id="d90-rO-f7c"/>
+                        <outlet property="enemyHpLabel" destination="Gn4-X2-BkN" id="Ufj-qF-Lej"/>
+                        <outlet property="enemyImage" destination="xyt-KK-NlC" id="lOM-P1-TPM"/>
+                        <outlet property="playerHpLabel" destination="FA7-y2-SkS" id="iWh-kV-VGc"/>
+                        <outlet property="printLabel" destination="uRH-UN-PUK" id="Cij-Zo-oS1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -125,6 +145,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="attack" width="198" height="223"/>
         <image name="bg" width="768" height="1024"/>
         <image name="chest" width="393" height="440"/>
         <image name="enem1" width="574" height="487"/>
