@@ -26,8 +26,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        player = Player(name: "Osama", hp: 30, attackPower: 60)
+        player = Player(name: "Prince ", hp: 100, attackPower: 15)
         playerHpLabel.text = "\(player.healthPoint) HP"
+        
+        generateRandomEnemy()
     }
     
     
@@ -57,7 +59,7 @@ class ViewController: UIViewController {
     @IBAction func onChestTapped(sender: AnyObject) {
         chestBtn.hidden = true
         printLabel.text = chestMessage
-        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "generateRandomEnemy", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "generateRandomEnemy", userInfo: nil, repeats: false)
     }
     
     func generateRandomEnemy(){
@@ -71,13 +73,5 @@ class ViewController: UIViewController {
         enemyImage.hidden = false
         
     }
-  
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

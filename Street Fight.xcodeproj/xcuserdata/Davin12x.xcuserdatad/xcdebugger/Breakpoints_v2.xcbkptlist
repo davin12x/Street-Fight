@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Street Fight/ViewController.swift"
-            timestampString = "474275012.446478"
+            timestampString = "474308318.101744"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "onAttackTapped(_:)"
             landmarkType = "5">
          </BreakpointContent>
